@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Time-management</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center mt-5">
+            <h1>Not to do list</h1>
+          </div>
+        </div>
+
+        <!-- Form area -->
+        <div class="row">
+          <div class="col p-5">
+            <div class="form-box py-5">
+              <form
+                class="row gx-3 d-flex justify-content-center gy-2 align-items-center"
+              >
+                <div class="col-md-4">
+                  <label class="visually-hidden" for="specificSizeInputName"
+                    >Name</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="specificSizeInputName"
+                    placeholder="Your task"
+                  />
+                </div>
+                <div class="col-md-4">
+                  <div class="input-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="specificSizeInputGroupUsername"
+                      placeholder="Hours"
+                    />
+                  </div>
+                </div>
+
+                <div class="col-auto">
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <!-- list area -->
+        <div class="row">
+          <div class="col-md-6 mb-5">
+            <h2 class="text-center">Task list</h2>
+            <hr />
+            <div class="list-items">
+              <table class="table table-striped w-100">
+                <tbody>
+                  <tr>
+                    <td><input type="checkbox" /> Watching TV</td>
+                    <td>5hr</td>
+                    <td class="text-end">
+                      <button class="btn">
+                        <i
+                          class="fas fa-trash btn-danger btn-sm"
+                          title="Delete"
+                        ></i>
+                      </button>
+                      <button class="btn">
+                        <i
+                          class="fas fa-arrow-right btn-sm btn-warning"
+                          title="Mark"
+                        ></i>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox" /> Watching TV</td>
+                    <td>5hr</td>
+                    <td class="text-end">
+                      <button class="btn">
+                        <i
+                          class="fas fa-trash btn-danger btn-sm"
+                          title="Delete"
+                        ></i>
+                      </button>
+                      <button class="btn">
+                        <i
+                          class="fas fa-arrow-right btn-sm btn-warning"
+                          title="Mark"
+                        ></i>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox" /> Watching TV</td>
+                    <td>5hr</td>
+                    <td class="text-end">
+                      <button class="btn">
+                        <i
+                          class="fas fa-trash btn-danger btn-sm"
+                          title="Delete"
+                        ></i>
+                      </button>
+                      <button class="btn">
+                        <i
+                          class="fas fa-arrow-right btn-sm btn-warning"
+                          title="Mark"
+                        ></i>
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="col-md-6 mb-5">
+            <h2 class="text-center">Bad list</h2>
+            <hr />
+            <div class="list-items">
+              <table class="table table-striped w-100">
+                <tbody>
+                  <tr>
+                    <td><input type="checkbox" /> Watching TV</td>
+                    <td>5hr</td>
+                    <td class="text-end">
+                      <button class="btn">
+                        <i
+                          class="fas fa-trash btn-danger btn-sm"
+                          title="Delete"
+                        ></i>
+                      </button>
+                      <button class="btn">
+                        <i
+                          class="fas fa-arrow-right btn-sm btn-warning"
+                          title="Mark"
+                        ></i>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox" /> Watching TV</td>
+                    <td>5hr</td>
+                    <td class="text-end">
+                      <button class="btn">
+                        <i
+                          class="fas fa-trash btn-danger btn-sm"
+                          title="Delete"
+                        ></i>
+                      </button>
+                      <button class="btn">
+                        <i
+                          class="fas fa-arrow-right btn-sm btn-warning"
+                          title="Mark"
+                        ></i>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox" /> Watching TV</td>
+                    <td>5hr</td>
+                    <td class="text-end">
+                      <button class="btn">
+                        <i
+                          class="fas fa-trash btn-danger btn-sm"
+                          title="Delete"
+                        ></i>
+                      </button>
+                      <button class="btn">
+                        <i
+                          class="fas fa-arrow-right btn-sm btn-warning"
+                          title="Mark"
+                        ></i>
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="ttl-bad text-end text-light text-end">
+            Total time saved = 50hr
+          </div>
+        </div>
+
+        <div class="row mt-2 pb-5 fs-3 fw-bolder text-warning">
+          <div class="col text-center">
+            Total time allocated this week = 50 hr
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
