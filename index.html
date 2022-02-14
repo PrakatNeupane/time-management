@@ -34,8 +34,10 @@
         <!-- Form area -->
         <div class="row">
           <div class="col p-5">
-            <div class="form-box py-5">
+            <div class="form-box pb-4">
               <form
+                action="javascript:void(0)"
+                onsubmit="handleOnSubmit(this)"
                 class="row gx-3 d-flex justify-content-center gy-2 align-items-center"
               >
                 <div class="col-md-4">
@@ -45,17 +47,21 @@
                   <input
                     type="text"
                     class="form-control"
+                    name="task"
                     id="specificSizeInputName"
                     placeholder="Your task"
+                    required
                   />
                 </div>
                 <div class="col-md-4">
                   <div class="input-group">
                     <input
-                      type="text"
+                      type="number"
+                      name="hr"
                       class="form-control"
                       id="specificSizeInputGroupUsername"
                       placeholder="Hours"
+                      required
                     />
                   </div>
                 </div>
@@ -75,8 +81,8 @@
             <hr />
             <div class="list-items">
               <table class="table table-striped w-100">
-                <tbody>
-                  <tr>
+                <tbody id="task-list">
+                  <!-- <tr>
                     <td><input type="checkbox" /> Watching TV</td>
                     <td>5hr</td>
                     <td class="text-end">
@@ -93,43 +99,7 @@
                         ></i>
                       </button>
                     </td>
-                  </tr>
-                  <tr>
-                    <td><input type="checkbox" /> Watching TV</td>
-                    <td>5hr</td>
-                    <td class="text-end">
-                      <button class="btn">
-                        <i
-                          class="fas fa-trash btn-danger btn-sm"
-                          title="Delete"
-                        ></i>
-                      </button>
-                      <button class="btn">
-                        <i
-                          class="fas fa-arrow-right btn-sm btn-warning"
-                          title="Mark"
-                        ></i>
-                      </button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td><input type="checkbox" /> Watching TV</td>
-                    <td>5hr</td>
-                    <td class="text-end">
-                      <button class="btn">
-                        <i
-                          class="fas fa-trash btn-danger btn-sm"
-                          title="Delete"
-                        ></i>
-                      </button>
-                      <button class="btn">
-                        <i
-                          class="fas fa-arrow-right btn-sm btn-warning"
-                          title="Mark"
-                        ></i>
-                      </button>
-                    </td>
-                  </tr>
+                  </tr> -->
                 </tbody>
               </table>
             </div>
@@ -199,13 +169,13 @@
             </div>
           </div>
           <div class="ttl-bad text-end text-light text-end">
-            Total time saved = 50hr
+            Total time saved = 5 hr
           </div>
         </div>
 
         <div class="row mt-2 pb-5 fs-3 fw-bolder text-warning">
           <div class="col text-center">
-            Total time allocated this week = 50 hr
+            Total time allocated this week = <span id="totalHours">0</span> hr
           </div>
         </div>
       </div>

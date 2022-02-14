@@ -1,0 +1,8 @@
+create a form to take task and hour input
+create an array to store the tasks and hours
+loop the array and display under task list
+calculate the total hours
+create another array for bad list
+count total hours from the bad list (to know hours that could have been saved)
+delete the task and re-calculate the hours
+take task from list to bad list and vice versa
