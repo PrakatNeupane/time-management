@@ -109,67 +109,12 @@
             <hr />
             <div class="list-items">
               <table class="table table-striped w-100">
-                <tbody>
-                  <tr>
-                    <td><input type="checkbox" /> Watching TV</td>
-                    <td>5hr</td>
-                    <td class="text-end">
-                      <button class="btn">
-                        <i
-                          class="fas fa-trash btn-danger btn-sm"
-                          title="Delete"
-                        ></i>
-                      </button>
-                      <button class="btn">
-                        <i
-                          class="fas fa-arrow-right btn-sm btn-warning"
-                          title="Mark"
-                        ></i>
-                      </button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td><input type="checkbox" /> Watching TV</td>
-                    <td>5hr</td>
-                    <td class="text-end">
-                      <button class="btn">
-                        <i
-                          class="fas fa-trash btn-danger btn-sm"
-                          title="Delete"
-                        ></i>
-                      </button>
-                      <button class="btn">
-                        <i
-                          class="fas fa-arrow-right btn-sm btn-warning"
-                          title="Mark"
-                        ></i>
-                      </button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td><input type="checkbox" /> Watching TV</td>
-                    <td>5hr</td>
-                    <td class="text-end">
-                      <button class="btn">
-                        <i
-                          class="fas fa-trash btn-danger btn-sm"
-                          title="Delete"
-                        ></i>
-                      </button>
-                      <button class="btn">
-                        <i
-                          class="fas fa-arrow-right btn-sm btn-warning"
-                          title="Mark"
-                        ></i>
-                      </button>
-                    </td>
-                  </tr>
-                </tbody>
+                <tbody id="bad-list"></tbody>
               </table>
             </div>
           </div>
           <div class="ttl-bad text-end text-light text-end">
-            Total time saved = 5 hr
+            Total time saved = <span id="bad-hours">0</span> hr
           </div>
         </div>
 
@@ -181,5 +126,6 @@
       </div>
     </div>
     <script src="script.js"></script>
+    <!-- <script src="rough.js"></script> -->
   </body>
 </html>
